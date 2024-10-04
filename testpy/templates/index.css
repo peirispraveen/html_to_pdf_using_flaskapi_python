@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Change to white to avoid background color issues */
+}
+
+.container {
+    width: 210mm;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e1e1e1; /* Simple border to ensure consistent layout */
+    box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.message p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.images {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensure that images are aligned properly */
+    margin-bottom: 20px;
+}
+
+.image-box {
+    display: table-cell;
+    width: 48%;
+    height: 200px;
+    border: 1px solid #ccc; /* Ensure consistent image box dimensions */
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle; /* Center the images */
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border: none; /* Avoid border-radius in PDFs */
+}
+
+.stats {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.stat-box {
+    display: table-cell;
+    width: 33%; /* Ensure each stat box has the same width */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-box span {
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    !*box-sizing: border-box;*!*/
+/*}*/
+
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #f5f5f5;*/
+/*}*/
+
+/*.container {*/
+/*    max-width: 1000px;*/
+/*    margin: 20px auto;*/
+/*    background-color: white;*/
+/*    !*border-radius: 8px;*!*/
+/*    !*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*!*/
+/*    padding: 20px;*/
+/*}*/
+
+/*header {*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*}*/
+
+/*.message {*/
+/*    background-color: #f9f9f9;*/
+/*    border: 1px solid #e1e1e1;*/
+/*    padding: 15px;*/
+/*    margin-bottom: 20px;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*.message p {*/
+/*    margin-bottom: 10px;*/
+/*    font-size: 16px;*/
+/*    color: #555;*/
+/*}*/
+
+/*.images {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.image-box {*/
+/*    width: 48%;*/
+/*    !*background-color: red; !* Placeholder for the image *!*!*/
+/*    height: 200px;*/
+/*    border-radius: 8px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.image-box img {*/
+/*    max-width: 100%;*/
+/*    max-height: 100%;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*.stats {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.stat-box {*/
+/*    width: 30%;*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.stat-box p {*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*}*/
+
+/*.stat-box span {*/
+/*    display: block;*/
+/*    font-size: 14px;*/
+/*    color: #888;*/
+/*}*/
