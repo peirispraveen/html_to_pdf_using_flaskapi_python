@@ -1,4 +1,3 @@
-/* General reset */
 * {
     box-sizing: border-box;
 }
@@ -34,15 +33,34 @@ body {
     margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
+#title_main {
+    /*text-align: left;*/
+    position: relative;
+    top:0;
+    left:0;
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
+
+.logo-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
 
 .temporal-table {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.temporal-table th, .temporal-table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .temporal-table table {
@@ -50,16 +68,17 @@ h1 {
     border-collapse: collapse;
 }
 
-.temporal-table th, .temporal-table td {
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: left;
-    font-size: 12px;
+.area-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.area-info, .legend-section, .data-source, .technical-data, .powered-by {
-    margin-bottom: 10px;
-    font-size: 12px;
+.area-info {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .area-info table {
@@ -67,26 +86,64 @@ h1 {
     border-collapse: collapse;
 }
 
-.area-info td {
+.area-info th, .area-info td {
     border: 1px solid #ccc;
     padding: 5px;
+    text-align: center;
 }
 
-.legend-section ul {
+.area-info th {
+    background-color: #f2f2f2;
+}
+
+.legend-and-data-source {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.legend-section, .data-source {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.data-source h3{
+    text-align: center;
+}
+
+.legend-section th {
+    text-align: left;
+}
+
+.legend-section h2{
+    text-align: center;
+}
+
+.legend-section ul, .data-source ul {
     list-style: none;
     padding-left: 0;
-    font-size: 12px;
 }
 
-.legend-section li {
+.legend-section li, .data-source li {
     margin-bottom: 5px;
 }
 
-.data-source, .technical-data, .powered-by {
-    color: #555;
+.technical-data {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-/* Adjusted for fit */
+.technical-data ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.technical-data li {
+    margin-bottom: 5px;
+}
+
 h2 {
     font-size: 16px;
     margin-bottom: 5px;
@@ -96,3 +153,41 @@ h3 {
     font-size: 14px;
     margin-bottom: 5px;
 }
+
+.powered-by {
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+}
+
+.risk-level {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .risk-level.low {
+    background-color: green;
+  }
+
+  .risk-level.medium {
+    background-color: yellow;
+  }
+
+  .risk-level.high {
+    background-color: gray;
+  }
+
+  .risk-level.go {
+    background-color: orange;
+  }
+
+  .risk-level.nogo {
+    background-color: pink;
+  }
+
+  .risk-level.deforestation {
+    background-color: red;
+  }
